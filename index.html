@@ -237,6 +237,31 @@
   .foot-bottom{margin-top:50px;padding-top:26px;border-top:1px solid var(--hair-2);display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-family:var(--sans);font-size:11px;letter-spacing:.06em;color:var(--cream-dim)}
   .foot-bottom .age{color:var(--copper)}
 
+  /* B2B notice band */
+  .b2b-notice{background:var(--noir-3);border-top:1px solid var(--copper);border-bottom:1px solid var(--hair-2)}
+  .b2b-notice .wrap{padding-top:18px;padding-bottom:18px}
+  .b2b-notice p{margin:0;text-align:center;font-family:var(--sans);font-weight:300;font-size:13.5px;letter-spacing:.03em;color:var(--cream-dim);line-height:1.7}
+  .b2b-notice b{color:var(--copper);font-weight:500;letter-spacing:.08em;text-transform:uppercase;font-size:11.5px}
+  /* Legal page */
+  .legal-hero{padding:72px 0 0}
+  .legaldoc{max-width:82ch;margin:0 auto}
+  .legaldoc h2{font-size:clamp(23px,3vw,32px);font-weight:600;color:var(--cream);margin:52px 0 0}
+  .legaldoc h2 .num{display:inline-block;font-family:var(--sans);font-weight:500;font-size:13px;letter-spacing:.1em;color:var(--copper);margin-right:12px;vertical-align:middle}
+  .legaldoc p{color:var(--cream-dim);font-size:17px;margin:16px 0 0}
+  .legaldoc p .hl{color:var(--cream)}
+  .gov-warning{border:1px solid var(--copper);background:rgba(194,116,58,.08);border-radius:3px;padding:24px 26px;margin:30px 0 0;font-family:var(--sans);font-weight:300;font-size:14.5px;letter-spacing:.01em;color:var(--cream);line-height:1.75}
+  .gov-warning b{display:block;font-family:var(--sans);font-weight:500;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--copper);margin-bottom:11px}
+  .legal-note{font-family:var(--sans);font-size:13px;letter-spacing:.02em;color:var(--cream-dim);opacity:.85;margin-top:48px;border-top:1px solid var(--hair-2);padding-top:24px;line-height:1.7}
+  /* Top announcement bar */
+  .topbar{background:var(--copper);color:#160e07}
+  .topbar .wrap{padding-top:11px;padding-bottom:11px;text-align:center}
+  .topbar p{margin:0;font-family:var(--sans);font-weight:500;font-size:12.5px;letter-spacing:.04em;line-height:1.5}
+  .topbar a{color:#160e07;text-decoration:underline;text-underline-offset:2px;font-weight:600;white-space:nowrap}
+  .topbar a:hover{opacity:.72}
+  /* Hero consumer referral line */
+  .hero-refer{margin-top:14px;font-family:var(--sans);font-weight:300;font-size:13px;letter-spacing:.02em;color:var(--cream-dim)}
+  .hero-refer a{color:var(--copper);text-decoration:none;border-bottom:1px solid rgba(194,116,58,.45);padding-bottom:1px;white-space:nowrap}
+  .hero-refer a:hover{border-color:var(--copper)}
   /* reveal */
   .reveal{opacity:0;transform:translateY(26px);transition:opacity .9s ease,transform .9s ease}
   .reveal.in{opacity:1;transform:none}
@@ -254,6 +279,7 @@
   }
   @media (max-width:680px){
     body{font-size:16px}
+    .topbar p{font-size:11.5px;letter-spacing:.02em}
     .nav-in{min-height:64px;padding:8px 20px}
     .brand .pf{font-size:19px}
     .brand .sub{font-size:8px;letter-spacing:.18em}
@@ -272,6 +298,8 @@
 </head>
 <body>
 <a class="skip" href="#contact">Skip to trade inquiry</a>
+
+<div class="topbar"><div class="wrap"><p>Licensed trade &amp; wholesale only — PF Distribution does not sell to individual consumers. To buy Mr. Mezcal, visit <a href="https://mrmezcal.com" target="_blank" rel="noopener">mrmezcal.com →</a></p></div></div>
 
 <!-- ============ NAV ============ -->
 <header class="nav">
@@ -292,7 +320,7 @@
     <div class="nav-cta">
       <span class="lang"><span class="on">EN</span><span class="sep">/</span><a href="es.html" hreflang="es">ES</a></span>
       <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">Menu</button>
-      <a class="btn btn-solid" href="#contact">Request Trade Info</a>
+      <a class="btn btn-solid" href="#contact">Wholesale Inquiries</a>
     </div>
   </div>
 </header>
@@ -304,12 +332,13 @@
       <div class="hero-copy reveal">
         <p class="eyebrow">Single-source mezcal · Oaxaca, México</p>
         <h1>The Missouri home of <em>Mr. Mezcal.</em></h1>
-        <p class="lead">PF Distribution is the licensed Missouri distribution partner for Mr. Mezcal — award-winning, single-source mezcal from Oaxaca, placed with the bars, restaurants, hotels, and retailers that shape the state's drinking culture.</p>
+        <p class="lead">PF Distribution is a licensed liquor distributor serving bars, restaurants, hotels, liquor stores, grocery stores, private clubs, event venues, caterers, and other licensed retailers. <strong style="color:var(--cream);font-weight:400">We do not sell directly to consumers.</strong></p>
         <div class="hero-cta">
-          <a class="btn btn-solid" href="#contact">Request Trade Information <span class="arr">→</span></a>
-          <a class="btn btn-line" href="#mezcals">Explore the Mezcals</a>
+          <a class="btn btn-solid" href="#contact">Request Wholesale Information <span class="arr">→</span></a>
+          <a class="btn btn-line" href="#contact">Become a Retail Partner</a>
         </div>
         <div class="trade-badge"><span class="dot"></span> Licensed trade accounts only · Not available to consumers</div>
+        <p class="hero-refer">Are you a consumer? PF Distribution is wholesale only — to buy Mr. Mezcal, visit <a href="https://mrmezcal.com" target="_blank" rel="noopener">mrmezcal.com →</a></p>
       </div>
       <div class="hero-img imgph reveal">
         <span class="phlabel"><b>Image 1 — Hero bottle</b>Tall, vertical Mr. Mezcal bottle on a dark, moody background.<i>images/hero-bottle.jpg · ~1000 × 1400px</i></span>
@@ -318,6 +347,8 @@
     </div>
   </div>
 </section>
+
+<div class="b2b-notice"><div class="wrap"><p><b>Trade &amp; wholesale only.</b> PF Distribution sells alcoholic products only to licensed businesses and approved alcohol retail, hospitality, event, catering, and wholesale accounts. We do not sell directly to individual consumers. Consumers looking to buy Mr. Mezcal can find it through licensed retailers via <a href="https://mrmezcal.com" target="_blank" rel="noopener" style="color:var(--copper);text-decoration:none">mrmezcal.com</a>.</p></div></div>
 
 <div class="strip">
   <div class="strip-in">
@@ -543,14 +574,14 @@
     <div class="contact-grid">
       <div class="c-side reveal">
         <p class="eyebrow">Trade Inquiries Only</p>
-        <h2>Request trade information.</h2>
+        <h2>Request wholesale information.</h2>
         <p class="lead">Tell us about your licensed business and our trade team will follow up with information, pricing, and availability. We respond to verified licensed accounts.</p>
         <div class="c-cards">
           <div class="c-card"><span class="k">Trade team</span><span class="v"><a href="mailto:gerardo@mrmezcal.mx">gerardo@mrmezcal.mx</a></span></div>
           <div class="c-card"><span class="k">Phone</span><span class="v"><a href="tel:+16365799374">(636) 579-9374</a></span></div>
           <div class="c-card"><span class="k">Location</span><span class="v">Williamsburg, Missouri</span></div>
         </div>
-        <p class="c-only">PF Distribution is a licensed alcohol wholesaler. We do not sell directly to consumers and cannot fulfill consumer orders, home delivery, or retail sales to the general public.</p>
+        <p class="c-only">PF Distribution sells alcoholic products only to licensed businesses and approved alcohol retail, hospitality, event, catering, and wholesale accounts. We do not sell directly to individual consumers.</p>
       </div>
 
       <form class="inq" id="inquiryForm" novalidate>
@@ -589,7 +620,7 @@
             <span>I confirm this inquiry is on behalf of a properly licensed business purchasing alcohol for resale, and that I am 21 years of age or older.</span>
           </label>
         </div>
-        <button type="submit" class="btn btn-solid">Send Trade Inquiry</button>
+        <button type="submit" class="btn btn-solid">Send Wholesale Inquiry</button>
         <p class="form-foot" id="formFoot">Trade inquiries only · We respond to verified licensed accounts</p>
       </form>
     </div>
@@ -622,7 +653,7 @@
       <div class="foot-brand">
         <div class="pf">PF Distribution</div>
         <div class="sub">Pistolas Fritas · Williamsburg, Missouri</div>
-        <p>The licensed Missouri distribution partner for Mr. Mezcal. We sell only to licensed trade accounts authorized to purchase alcohol for resale. We do not sell directly to consumers.</p>
+        <p>The licensed Missouri distribution partner for Mr. Mezcal. We sell only to licensed trade accounts authorized to purchase alcohol for resale. We do not sell directly to individual consumers.</p>
       </div>
       <div class="foot-col">
         <h4>Explore</h4>
@@ -637,6 +668,7 @@
         <a href="#serve">Who we serve</a>
         <a href="#contact">Request trade information</a>
         <a href="#compliance">Compliance notice</a>
+        <a href="legal.html">Legal &amp; Terms</a>
         <a href="https://mrmezcal.com" target="_blank" rel="noopener">Brand info: mrmezcal.com ↗</a>
       </div>
     </div>
