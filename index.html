@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PF Distribution — Missouri Distribution Partner for Mr. Mezcal | Licensed Trade Only</title>
+<meta name="description" content="PF Distribution is the licensed Missouri distribution partner for Mr. Mezcal — award-winning, single-source mezcal from Oaxaca. We work only with licensed trade accounts: bars, restaurants, hotels, liquor stores, and retailers. Not available to consumers.">
+<meta name="theme-color" content="#0E0C0A">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --noir:#0E0C0A;
+    --noir-2:#15110C;
+    --noir-3:#1B150F;
+    --cream:#EFE7D6;
+    --cream-dim:#9C9079;
+    --copper:#C2743A;
+    --copper-d:#9E5527;
+    --agave:#869059;
+    --agave-d:#3C462E;
+    --gold:#C9A862;
+    --hair:rgba(239,231,214,.12);
+    --hair-2:rgba(239,231,214,.06);
+    --maxw:1200px;
+    --serif:"Cormorant Garamond",Georgia,serif;
+    --sans:"Jost",system-ui,sans-serif;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  body{
+    margin:0;background:var(--noir);color:var(--cream);
+    font-family:var(--sans);font-weight:300;font-size:17px;line-height:1.7;
+    -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+  }
+  h1,h2,h3,h4{font-family:var(--serif);font-weight:500;line-height:1.05;margin:0;letter-spacing:.005em}
+  a{color:inherit}
+  img{max-width:100%;display:block}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 32px}
+
+  .eyebrow{font-family:var(--sans);font-weight:400;font-size:11px;letter-spacing:.32em;text-transform:uppercase;color:var(--copper);margin:0 0 22px}
+  .eyebrow.agave{color:var(--agave)}
+  .eyebrow.gold{color:var(--gold)}
+
+  .skip{position:absolute;left:-999px;top:0;background:var(--copper);color:#1a120b;padding:10px 16px;z-index:300;font-family:var(--sans);font-size:13px;letter-spacing:.1em}
+  .skip:focus{left:8px;top:8px}
+
+  /* Buttons */
+  .btn{font-family:var(--sans);font-weight:400;font-size:12px;letter-spacing:.2em;text-transform:uppercase;text-decoration:none;
+    display:inline-flex;align-items:center;gap:11px;cursor:pointer;border:1px solid transparent;
+    padding:16px 30px;border-radius:1px;transition:background .3s,color .3s,border-color .3s,transform .3s}
+  .btn .arr{transition:transform .3s}
+  .btn:hover .arr{transform:translateX(4px)}
+  .btn-solid{background:var(--copper);color:#160e07}
+  .btn-solid:hover{background:var(--copper-d);color:var(--cream);transform:translateY(-2px)}
+  .btn-line{background:transparent;color:var(--cream);border-color:var(--hair)}
+  .btn-line:hover{border-color:var(--copper);color:var(--copper);transform:translateY(-2px)}
+
+  /* Nav */
+  header.nav{position:sticky;top:0;z-index:200;background:rgba(14,12,10,.82);backdrop-filter:blur(12px);border-bottom:1px solid var(--hair-2)}
+  .nav-in{display:flex;align-items:center;justify-content:space-between;gap:24px;height:76px;max-width:var(--maxw);margin:0 auto;padding:0 32px}
+  .brand{display:flex;flex-direction:column;text-decoration:none;line-height:1}
+  .brand .pf{font-family:var(--serif);font-weight:600;font-size:23px;letter-spacing:.04em;color:var(--cream)}
+  .brand .sub{font-family:var(--sans);font-weight:400;font-size:9px;letter-spacing:.34em;text-transform:uppercase;color:var(--cream-dim);margin-top:6px}
+  .nav-links{display:flex;align-items:center;gap:32px}
+  .nav-links a{font-family:var(--sans);font-weight:300;font-size:12px;letter-spacing:.16em;text-transform:uppercase;text-decoration:none;color:var(--cream-dim);transition:color .25s}
+  .nav-links a:hover{color:var(--cream)}
+  .nav-cta{display:flex;align-items:center;gap:16px}
+  .lang{display:inline-flex;align-items:center;gap:8px;font-family:var(--sans);font-size:11px;letter-spacing:.16em;text-transform:uppercase}
+  .lang a,.lang span{text-decoration:none;color:var(--cream-dim);transition:color .25s}
+  .lang a:hover{color:var(--cream)}
+  .lang .on{color:var(--copper)}
+  .lang .sep{color:var(--hair);font-size:10px}
+  .nav-toggle{display:none;background:none;border:1px solid var(--hair);color:var(--cream);border-radius:1px;padding:10px 14px;font-family:var(--sans);font-size:11px;letter-spacing:.14em;text-transform:uppercase;cursor:pointer}
+
+  /* Hero */
+  .hero{position:relative;overflow:hidden;padding:90px 0 0}
+  .hero::before{content:"";position:absolute;inset:0;pointer-events:none;
+    background:
+      radial-gradient(120% 90% at 88% 0%, rgba(194,116,58,.20), transparent 52%),
+      radial-gradient(90% 80% at 0% 100%, rgba(60,70,46,.30), transparent 58%)}
+  .hero-grid{position:relative;display:grid;grid-template-columns:1.25fr .85fr;gap:60px;align-items:center;padding-bottom:60px}
+  .hero h1{font-size:clamp(46px,7vw,92px);font-weight:500;line-height:.98;letter-spacing:.005em}
+  .hero h1 em{font-style:italic;color:var(--copper)}
+  .hero .lead{font-size:clamp(17px,1.7vw,20px);color:var(--cream-dim);max-width:48ch;margin:30px 0 0;font-weight:300}
+  .hero-cta{display:flex;flex-wrap:wrap;gap:16px;margin:40px 0 0}
+  .trade-badge{display:inline-flex;align-items:center;gap:11px;margin-top:34px;font-family:var(--sans);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--cream-dim)}
+  .trade-badge .dot{width:7px;height:7px;border-radius:50%;background:var(--agave);box-shadow:0 0 0 4px rgba(134,144,89,.18)}
+  .hero-img{height:560px}
+
+  /* thin rule strip */
+  .strip{border-top:1px solid var(--hair-2);border-bottom:1px solid var(--hair-2);background:rgba(0,0,0,.18)}
+  .strip-in{display:flex;flex-wrap:wrap;justify-content:center;gap:14px 44px;padding:20px 32px;max-width:var(--maxw);margin:0 auto}
+  .strip span{font-family:var(--sans);font-size:11px;font-weight:300;letter-spacing:.2em;text-transform:uppercase;color:var(--cream-dim)}
+  .strip span b{color:var(--gold);font-weight:400}
+
+  /* Section shells */
+  section{padding:120px 0}
+  .sec-2{background:var(--noir-2)}
+  .sec-head{max-width:58ch}
+  .sec-head h2{font-size:clamp(34px,5vw,60px);font-weight:500}
+  .sec-head h2 em{font-style:italic;color:var(--copper)}
+  .sec-head .lead{font-size:20px;color:var(--cream-dim);margin:26px 0 0;font-weight:300}
+
+  /* Image placeholder */
+  .imgph{position:relative;overflow:hidden;background:linear-gradient(165deg,#1c160f,#100c08);border:1px solid var(--hair);border-radius:2px;display:flex;align-items:center;justify-content:center}
+  .imgph .phlabel{position:relative;z-index:0;text-align:center;font-family:var(--sans);font-weight:300;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--cream-dim);padding:26px;line-height:1.9}
+  .imgph .phlabel b{display:block;color:var(--copper);font-weight:400;font-size:10px;letter-spacing:.24em;margin-bottom:9px}
+  .imgph .phlabel i{display:block;font-style:normal;color:var(--cream-dim);opacity:.6;font-size:10px;letter-spacing:.12em;margin-top:9px}
+  .imgph img{position:absolute;inset:0;z-index:1;width:100%;height:100%;object-fit:cover}
+
+  /* About PF */
+  .about-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:64px;align-items:center;margin-top:54px}
+  .about-body p{color:var(--cream-dim);margin:0 0 20px;font-size:18px}
+  .about-body p:last-child{margin:0}
+  .legal{font-family:var(--sans);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--cream-dim);opacity:.7;margin-top:8px}
+  .pillars{display:grid;gap:1px;background:var(--hair-2);border:1px solid var(--hair-2)}
+  .pillar{background:var(--noir);padding:26px 28px}
+  .pillar .pt{font-family:var(--serif);font-weight:600;font-size:22px;color:var(--cream)}
+  .pillar .pd{font-size:14px;color:var(--cream-dim);margin-top:5px;letter-spacing:.01em}
+
+  /* About Mr Mezcal */
+  .mez-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:64px;align-items:center;margin-top:54px}
+  .mez-img{height:540px}
+  .mez-body p{color:var(--cream-dim);font-size:18px;margin:0 0 20px}
+  .maestros{display:flex;gap:10px;flex-wrap:wrap;margin-top:28px}
+  .maestros .m{font-family:var(--sans);font-size:11px;letter-spacing:.16em;text-transform:uppercase;padding:9px 16px;border:1px solid var(--hair);border-radius:1px;color:var(--cream)}
+  .process{display:grid;grid-template-columns:repeat(4,1fr);gap:26px;margin-top:54px;border-top:1px solid var(--hair);padding-top:40px}
+  .process .p .pn{font-family:var(--serif);font-style:italic;font-size:30px;color:var(--copper);line-height:1}
+  .process .p .pt{font-family:var(--sans);font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--cream);margin:14px 0 8px}
+  .process .p .pd{font-size:14px;color:var(--cream-dim);line-height:1.6}
+  .ext{display:inline-flex;align-items:center;gap:9px;font-family:var(--sans);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--copper);text-decoration:none;margin-top:30px;border-bottom:1px solid transparent;padding-bottom:3px;transition:border-color .3s}
+  .ext:hover{border-color:var(--copper)}
+
+  /* Mezcals */
+  .mz-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:26px;margin-top:60px}
+  .mz{background:var(--noir-3);border:1px solid var(--hair-2);border-radius:2px;overflow:hidden;display:flex;flex-direction:column;transition:transform .35s,border-color .35s}
+  .mz:hover{transform:translateY(-5px);border-color:rgba(201,168,98,.32)}
+  .mz .mz-ph{height:300px}
+  .mz .mz-body{padding:26px 24px 28px}
+  .mz .mz-top{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+  .mz h3{font-size:30px;font-weight:600;color:var(--cream)}
+  .mz .abv{font-family:var(--sans);font-size:11px;letter-spacing:.12em;color:var(--gold);flex:none}
+  .mz .agave{font-family:var(--sans);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--cream-dim);margin-top:8px}
+  .mz .role{font-family:var(--serif);font-style:italic;font-size:17px;color:var(--copper);margin:16px 0 18px;line-height:1.3}
+  .mz .notes{display:flex;flex-direction:column;gap:12px;border-top:1px solid var(--hair-2);padding-top:18px}
+  .mz .nrow{display:block}
+  .mz .nk{font-family:var(--sans);font-size:9.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--agave);display:block;margin-bottom:3px}
+  .mz .nv{font-size:14.5px;color:var(--cream-dim);line-height:1.5}
+  .mz .tag{margin-top:18px;display:inline-block;font-family:var(--sans);font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);border:1px solid rgba(201,168,98,.3);border-radius:1px;padding:6px 12px}
+
+  /* Availability */
+  .avail-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;margin-top:54px}
+  .avail-stats{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--hair-2);border:1px solid var(--hair-2)}
+  .as{background:var(--noir-2);padding:34px 30px}
+  .as .n{font-family:var(--serif);font-weight:600;font-size:52px;line-height:1;color:var(--gold)}
+  .as .l{font-family:var(--sans);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--cream-dim);margin-top:12px}
+  .avail-body p{color:var(--cream-dim);font-size:18px;margin:0 0 22px}
+  .avail-list{list-style:none;padding:0;margin:0 0 26px;display:flex;flex-direction:column;gap:0;border-top:1px solid var(--hair-2)}
+  .avail-list li{display:flex;justify-content:space-between;align-items:baseline;gap:18px;padding:15px 0;border-bottom:1px solid var(--hair-2);font-family:var(--sans);font-size:14px;letter-spacing:.04em}
+  .avail-list li .vn{color:var(--cream);font-size:18px;font-family:var(--serif)}
+  .avail-list li .vs{color:var(--cream-dim);font-size:11px;letter-spacing:.14em;text-transform:uppercase}
+  .avail-note{font-family:var(--sans);font-size:12px;letter-spacing:.06em;color:var(--cream-dim);line-height:1.8;border-left:1px solid var(--copper);padding-left:16px}
+
+  /* Awards */
+  .awards{display:grid;grid-template-columns:1fr 1fr;gap:0 64px;margin-top:54px;border-top:1px solid rgba(201,168,98,.25)}
+  .aw{display:grid;grid-template-columns:auto 1fr auto;gap:22px;align-items:center;padding:26px 0;border-bottom:1px solid rgba(201,168,98,.16)}
+  .aw .medal{width:48px;height:48px;border-radius:50%;flex:none;display:flex;align-items:center;justify-content:center;
+    background:radial-gradient(circle at 36% 30%,#ecd28e,#c9a862 55%,#8c6f33);
+    font-family:var(--sans);font-size:8.5px;font-weight:500;letter-spacing:.04em;color:#3a2c10;text-align:center;line-height:1.05;box-shadow:0 10px 22px -10px rgba(0,0,0,.7)}
+  .aw .comp{font-family:var(--serif);font-weight:600;font-size:21px;color:var(--cream)}
+  .aw .what{font-family:var(--sans);font-size:13px;color:var(--cream-dim);margin-top:3px;letter-spacing:.02em}
+  .aw .yr{font-family:var(--sans);font-size:12px;letter-spacing:.1em;color:var(--gold)}
+  .aw-note{font-family:var(--sans);font-size:11.5px;letter-spacing:.04em;color:var(--cream-dim);margin-top:28px;opacity:.8}
+
+  /* Who we serve */
+  .serve-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--hair-2);border:1px solid var(--hair-2);margin-top:54px}
+  .sv{background:var(--noir);padding:34px 30px;transition:background .3s}
+  .sv:hover{background:var(--noir-3)}
+  .sv .svn{font-family:var(--serif);font-weight:600;font-size:24px;color:var(--cream)}
+  .sv .svd{font-size:14px;color:var(--cream-dim);margin-top:7px;letter-spacing:.01em}
+
+  /* Contact */
+  .contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:60px;align-items:start;margin-top:54px}
+  .c-side h2{font-size:clamp(32px,4.4vw,52px)}
+  .c-side .lead{color:var(--cream-dim);font-size:19px;margin-top:24px}
+  .c-cards{margin-top:34px;display:flex;flex-direction:column;gap:1px;background:var(--hair-2);border:1px solid var(--hair-2)}
+  .c-card{background:var(--noir-2);padding:20px 22px;display:flex;flex-direction:column;gap:5px}
+  .c-card .k{font-family:var(--sans);font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--cream-dim)}
+  .c-card .v{font-family:var(--serif);font-size:20px;color:var(--cream)}
+  .c-card a{color:var(--copper);text-decoration:none}
+  .c-card a:hover{text-decoration:underline}
+  .c-only{margin-top:24px;font-family:var(--sans);font-size:12px;letter-spacing:.04em;line-height:1.8;color:var(--cream-dim);border-left:1px solid var(--copper);padding-left:16px}
+
+  form.inq{background:var(--noir-3);border:1px solid var(--hair);border-radius:3px;padding:36px}
+  .field{margin-bottom:20px}
+  .field.r2{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:0}
+  .field.r2 .field{margin-bottom:20px}
+  label{display:block;font-family:var(--sans);font-size:10px;font-weight:400;letter-spacing:.16em;text-transform:uppercase;color:var(--cream-dim);margin-bottom:9px}
+  label .req{color:var(--copper)}
+  label .opt{text-transform:none;letter-spacing:0;color:var(--cream-dim);opacity:.7}
+  input,select,textarea{width:100%;font-family:var(--sans);font-weight:300;font-size:15px;color:var(--cream);background:rgba(0,0,0,.3);
+    border:1px solid var(--hair);border-radius:2px;padding:13px 15px;transition:border-color .3s,box-shadow .3s}
+  input::placeholder,textarea::placeholder{color:rgba(156,144,121,.55)}
+  input:focus,select:focus,textarea:focus{outline:none;border-color:var(--copper);box-shadow:0 0 0 3px rgba(194,116,58,.14)}
+  select{appearance:none;background-image:linear-gradient(45deg,transparent 50%,var(--cream-dim) 50%),linear-gradient(135deg,var(--cream-dim) 50%,transparent 50%);background-position:calc(100% - 18px) 19px,calc(100% - 13px) 19px;background-size:5px 5px,5px 5px;background-repeat:no-repeat}
+  option{background:var(--noir-2);color:var(--cream)}
+  textarea{resize:vertical;min-height:100px}
+  .checks{display:grid;grid-template-columns:repeat(2,1fr);gap:9px 18px}
+  .chk{display:flex;align-items:center;gap:10px;font-family:var(--sans);font-size:14px;font-weight:300;color:var(--cream)}
+  .chk input,.consent input{width:auto}
+  .consent{display:flex;gap:12px;align-items:flex-start;font-family:var(--sans);font-weight:300;font-size:13.5px;color:var(--cream-dim);line-height:1.6;background:rgba(0,0,0,.25);padding:15px 17px;border-radius:2px;border:1px solid var(--hair-2)}
+  .consent input{margin-top:4px}
+  form .btn-solid{width:100%;justify-content:center;margin-top:8px}
+  .form-foot{font-family:var(--sans);font-size:11px;letter-spacing:.08em;color:var(--cream-dim);text-align:center;margin-top:16px}
+
+  /* Compliance */
+  .comp{max-width:74ch}
+  .comp h2{font-size:clamp(30px,4.2vw,50px)}
+  .comp p{color:var(--cream-dim);font-size:18px;margin:24px 0 0}
+  .comp p .hl{color:var(--cream)}
+  .comp .small{font-size:14px;opacity:.75}
+  .comp-tags{display:flex;gap:11px;flex-wrap:wrap;margin-top:34px}
+  .comp-tags .t{font-family:var(--sans);font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--cream);border:1px solid var(--hair);border-radius:1px;padding:10px 16px}
+
+  /* Footer */
+  footer.site{background:#0A0807;color:var(--cream-dim);padding:70px 0 44px;border-top:1px solid var(--hair-2)}
+  .foot-top{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:48px}
+  .foot-brand .pf{font-family:var(--serif);font-weight:600;font-size:26px;color:var(--cream)}
+  .foot-brand .sub{font-family:var(--sans);font-size:9.5px;letter-spacing:.3em;text-transform:uppercase;color:var(--cream-dim);margin-top:9px}
+  .foot-brand p{font-size:14.5px;margin:20px 0 0;max-width:42ch;line-height:1.7}
+  .foot-col h4{font-family:var(--sans);font-size:10.5px;font-weight:400;letter-spacing:.2em;text-transform:uppercase;color:var(--cream);margin-bottom:18px}
+  .foot-col a{display:block;text-decoration:none;font-family:var(--sans);font-weight:300;font-size:14.5px;color:var(--cream-dim);margin-bottom:11px;transition:color .25s}
+  .foot-col a:hover{color:var(--copper)}
+  .foot-bottom{margin-top:50px;padding-top:26px;border-top:1px solid var(--hair-2);display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-family:var(--sans);font-size:11px;letter-spacing:.06em;color:var(--cream-dim)}
+  .foot-bottom .age{color:var(--copper)}
+
+  /* reveal */
+  .reveal{opacity:0;transform:translateY(26px);transition:opacity .9s ease,transform .9s ease}
+  .reveal.in{opacity:1;transform:none}
+  @media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+
+  /* Responsive */
+  @media (max-width:1000px){
+    .hero-grid,.about-grid,.mez-grid,.avail-grid,.contact-grid{grid-template-columns:1fr;gap:46px}
+    .hero-img{order:-1;height:420px}
+    .mez-img{height:420px}
+    .mz-grid{grid-template-columns:1fr 1fr}
+    .awards{grid-template-columns:1fr}
+    .serve-grid{grid-template-columns:1fr 1fr}
+    .process{grid-template-columns:1fr 1fr;gap:30px}
+  }
+  @media (max-width:680px){
+    body{font-size:16px}
+    section{padding:84px 0}
+    .nav-links{display:none}
+    .nav-toggle{display:inline-block}
+    .nav-links.open{display:flex;position:absolute;top:76px;left:0;right:0;flex-direction:column;background:var(--noir);padding:22px 32px;gap:18px;border-bottom:1px solid var(--hair)}
+    .nav-cta .btn-line{display:none}
+    .mz-grid,.serve-grid,.avail-stats,.checks,.field.r2{grid-template-columns:1fr}
+    .field.r2{gap:0}
+    .foot-top{grid-template-columns:1fr;gap:34px}
+    .aw{grid-template-columns:auto 1fr;gap:16px}
+    .aw .yr{grid-column:2;text-align:left;margin-top:3px}
+  }
+</style>
+</head>
+<body>
+<a class="skip" href="#contact">Skip to trade inquiry</a>
+
+<!-- ============ NAV ============ -->
+<header class="nav">
+  <div class="nav-in">
+    <a class="brand" href="#top">
+      <span class="pf">PF Distribution</span>
+      <span class="sub">Williamsburg, Missouri · Licensed Trade Only</span>
+    </a>
+    <nav class="nav-links" id="navlinks">
+      <a href="#about">Distribution</a>
+      <a href="#mezcal">Mr. Mezcal</a>
+      <a href="#mezcals">The Mezcals</a>
+      <a href="#availability">Availability</a>
+      <a href="#awards">Awards</a>
+      <a href="#serve">Who We Serve</a>
+      <a href="#compliance">Compliance</a>
+    </nav>
+    <div class="nav-cta">
+      <span class="lang"><span class="on">EN</span><span class="sep">/</span><a href="es.html" hreflang="es">ES</a></span>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">Menu</button>
+      <a class="btn btn-solid" href="#contact">Request Trade Info</a>
+    </div>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Single-source mezcal · Oaxaca, México</p>
+        <h1>The Missouri home of <em>Mr. Mezcal.</em></h1>
+        <p class="lead">PF Distribution is the licensed Missouri distribution partner for Mr. Mezcal — award-winning, single-source mezcal from Oaxaca, placed with the bars, restaurants, hotels, and retailers that shape the state's drinking culture.</p>
+        <div class="hero-cta">
+          <a class="btn btn-solid" href="#contact">Request Trade Information <span class="arr">→</span></a>
+          <a class="btn btn-line" href="#mezcals">Explore the Mezcals</a>
+        </div>
+        <div class="trade-badge"><span class="dot"></span> Licensed trade accounts only · Not available to consumers</div>
+      </div>
+      <div class="hero-img imgph reveal">
+        <span class="phlabel"><b>Image 1 — Hero bottle</b>Tall, vertical Mr. Mezcal bottle on a dark, moody background.<i>images/hero-bottle.jpg · ~1000 × 1400px</i></span>
+        <img src="images/hero-bottle.jpg" alt="Mr. Mezcal single-source mezcal bottle" onerror="this.style.display='none'">
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="strip">
+  <div class="strip-in">
+    <span>Exclusively <b>Mr. Mezcal</b></span>
+    <span>Single-source · <b>Oaxaca</b></span>
+    <span><b>Platinum 96/100</b> · Double Gold</span>
+    <span>Williamsburg, <b>Missouri</b></span>
+    <span><b>Licensed trade only</b></span>
+  </div>
+</div>
+
+<!-- ============ ABOUT PF DISTRIBUTION ============ -->
+<section id="about">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">The Distributor</p>
+      <h2>A single house, devoted to one extraordinary <em>mezcal.</em></h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-body reveal">
+        <p>PF Distribution is a licensed alcohol wholesaler based in Williamsburg, Missouri. As the Missouri distribution partner for Mr. Mezcal, we bring a family-made, single-source Oaxacan mezcal to the establishments that define how Missouri drinks.</p>
+        <p>We work strictly with licensed trade accounts — bars, restaurants, hotels, liquor stores, grocery retailers, private clubs, event venues, caterers, and other licensed alcohol businesses. We do not sell directly to consumers, and we operate fully within the three-tier alcohol distribution system.</p>
+        <p class="legal">Operating as Pistolas Fritas · Williamsburg, Missouri</p>
+      </div>
+      <div class="pillars reveal">
+        <div class="pillar"><div class="pt">Exclusively Mr. Mezcal</div><div class="pd">One brand, given our full attention — not a sprawling catalog.</div></div>
+        <div class="pillar"><div class="pt">Williamsburg, Missouri</div><div class="pd">A licensed in-state wholesale partner for Missouri trade.</div></div>
+        <div class="pillar"><div class="pt">Trade-only, by design</div><div class="pd">Three-tier compliant. Licensed accounts only, never consumers.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT MR MEZCAL ============ -->
+<section class="sec-2" id="mezcal">
+  <div class="wrap">
+    <div class="mez-grid">
+      <div class="mez-img imgph reveal">
+        <span class="phlabel"><b>Image 2 — Heritage / palenque</b>The maestros at the palenque, agave fields, or an earthen roasting pit in Oaxaca.<i>images/maestros.jpg · ~1100 × 1300px</i></span>
+        <img src="images/maestros.jpg" alt="Mr. Mezcal maestros mezcaleros at the palenque in Oaxaca" onerror="this.style.display='none'">
+      </div>
+      <div class="mez-body reveal">
+        <p class="eyebrow agave">The Mezcal</p>
+        <h2 style="font-size:clamp(32px,4.6vw,54px)">Made by one family. Recognized by those who judge mezcal for a living.</h2>
+        <p style="margin-top:28px">Mr. Mezcal is a family-owned, single-source mezcal from Santiago Matatlán, Oaxaca. Three generations of the same family make it entirely by hand — no industrial machines, no blending plants, and no spirit bought on the open market. Every bottle traces back to one palenque and one family's agave.</p>
+        <p>A 42% ABV artesanal mezcal, made slowly and patiently, that has earned top honors at the competitions buyers and connoisseurs actually watch.</p>
+        <div class="maestros">
+          <span class="m">Maestros · Rodolfo</span>
+          <span class="m">Silverio</span>
+          <span class="m">Temo</span>
+        </div>
+        <a class="ext" href="https://mrmezcal.com" target="_blank" rel="noopener">Full brand information at mrmezcal.com →</a>
+      </div>
+    </div>
+    <div class="process reveal">
+      <div class="p"><div class="pn">I</div><div class="pt">Roast</div><div class="pd">Agave roasted underground over wood and stone.</div></div>
+      <div class="p"><div class="pn">II</div><div class="pt">Crush</div><div class="pd">Roasted piñas crushed by tahona stone wheel.</div></div>
+      <div class="p"><div class="pn">III</div><div class="pt">Ferment</div><div class="pd">Naturally fermented in open wooden vats.</div></div>
+      <div class="p"><div class="pn">IV</div><div class="pt">Distill</div><div class="pd">Twice-distilled in copper. Patience is the only machine.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ THE MEZCALS ============ -->
+<section id="mezcals">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">The Mezcals</p>
+      <h2>Four expressions. One maestro mezcalero. <em>Zero shortcuts.</em></h2>
+      <p class="lead">Each varietal is distilled from a single agave — from the everyday classic to rare, wild expressions worth featuring on any list or shelf. All bottlings 42% ABV.</p>
+    </div>
+    <div class="mz-grid">
+
+      <article class="mz reveal">
+        <div class="mz-ph imgph">
+          <span class="phlabel"><b>Image 3 — Espadín</b>Single bottle on dark ground.<i>images/espadin.jpg · ~700 × 900px</i></span>
+          <img src="images/espadin.jpg" alt="Mr. Mezcal Espadín bottle" onerror="this.style.display='none'">
+        </div>
+        <div class="mz-body">
+          <div class="mz-top"><h3>Espadín</h3><span class="abv">42% ABV</span></div>
+          <p class="agave">Agave angustifolia · cultivated</p>
+          <p class="role">The everyday classic — the bartender's pour.</p>
+          <div class="notes">
+            <div class="nrow"><span class="nk">Nose</span><span class="nv">Roasted agave, crisp green apple, a soft thread of hearth smoke.</span></div>
+            <div class="nrow"><span class="nk">Palate</span><span class="nv">Rounded and balanced — cooked pineapple, citrus, light salinity.</span></div>
+            <div class="nrow"><span class="nk">Finish</span><span class="nv">Warm and even, built for cocktails.</span></div>
+          </div>
+          <span class="tag">Core stock</span>
+        </div>
+      </article>
+
+      <article class="mz reveal">
+        <div class="mz-ph imgph">
+          <span class="phlabel"><b>Image 4 — Tobalá</b>Single bottle on dark ground.<i>images/tobala.jpg · ~700 × 900px</i></span>
+          <img src="images/tobala.jpg" alt="Mr. Mezcal Tobalá bottle" onerror="this.style.display='none'">
+        </div>
+        <div class="mz-body">
+          <div class="mz-top"><h3>Tobalá</h3><span class="abv">42% ABV</span></div>
+          <p class="agave">Agave potatorum · wild</p>
+          <p class="role">Bright, delicate, decorated — the connoisseur's bottle.</p>
+          <div class="notes">
+            <div class="nrow"><span class="nk">Nose</span><span class="nv">Wild herbs, white flowers, a thread of mineral smoke.</span></div>
+            <div class="nrow"><span class="nk">Palate</span><span class="nv">Green melon, river-stone minerality, a touch of soft pepper.</span></div>
+            <div class="nrow"><span class="nk">Finish</span><span class="nv">Long, clean, gently floral.</span></div>
+          </div>
+          <span class="tag">Best Mezcal · Las Vegas Platinum 96/100</span>
+        </div>
+      </article>
+
+      <article class="mz reveal">
+        <div class="mz-ph imgph">
+          <span class="phlabel"><b>Image 5 — Cuishe</b>Single bottle on dark ground.<i>images/cuishe.jpg · ~700 × 900px</i></span>
+          <img src="images/cuishe.jpg" alt="Mr. Mezcal Cuishe bottle" onerror="this.style.display='none'">
+        </div>
+        <div class="mz-body">
+          <div class="mz-top"><h3>Cuishe</h3><span class="abv">42% ABV</span></div>
+          <p class="agave">Agave karwinskii · ~18 yrs</p>
+          <p class="role">Savory and mineral — eighteen years in the field before the fire.</p>
+          <div class="notes">
+            <div class="nrow"><span class="nk">Nose</span><span class="nv">Dry earth, fennel, candied citrus peel.</span></div>
+            <div class="nrow"><span class="nk">Palate</span><span class="nv">Vegetal and savory — celery root, minerals, dried herbs.</span></div>
+            <div class="nrow"><span class="nk">Finish</span><span class="nv">Lean and dry, with smoke that lingers.</span></div>
+          </div>
+          <span class="tag">Rare · limited stock</span>
+        </div>
+      </article>
+
+      <article class="mz reveal">
+        <div class="mz-ph imgph">
+          <span class="phlabel"><b>Image 6 — Tepeztate</b>Single bottle on dark ground.<i>images/tepeztate.jpg · ~700 × 900px</i></span>
+          <img src="images/tepeztate.jpg" alt="Mr. Mezcal Tepeztate bottle" onerror="this.style.display='none'">
+        </div>
+        <div class="mz-body">
+          <div class="mz-top"><h3>Tepeztate</h3><span class="abv">42% ABV</span></div>
+          <p class="agave">Agave marmorata · wild, 25+ yrs</p>
+          <p class="role">The rarest pour — decades in the making.</p>
+          <div class="notes">
+            <div class="nrow"><span class="nk">Nose</span><span class="nv">Tropical fruit, fresh jalapeño, wet stone.</span></div>
+            <div class="nrow"><span class="nk">Palate</span><span class="nv">Intense and layered — ripe mango, green chile, herbaceous depth.</span></div>
+            <div class="nrow"><span class="nk">Finish</span><span class="nv">Expansive and peppery.</span></div>
+          </div>
+          <span class="tag">Rare · limited stock</span>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ AVAILABILITY ============ -->
+<section class="sec-2" id="availability">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow agave">Available now · Missouri trade</p>
+      <h2>Ready to pour. Ready to <em>shelf.</em></h2>
+    </div>
+    <div class="avail-grid">
+      <div class="avail-body reveal">
+        <p>Mr. Mezcal is in our Missouri warehouse now and available to licensed trade accounts by the case and by the full pallet, across all four single-agave varieties.</p>
+        <ul class="avail-list">
+          <li><span class="vn">Espadín</span><span class="vs">Core stock</span></li>
+          <li><span class="vn">Tobalá</span><span class="vs">Limited</span></li>
+          <li><span class="vn">Tepeztate</span><span class="vs">Limited</span></li>
+          <li><span class="vn">Cuishe</span><span class="vs">Limited</span></li>
+        </ul>
+        <p class="avail-note">Availability and quantities change with demand. Contact our trade team for current pricing, allocation, and lead times. Wholesale to licensed accounts only — no consumer sales.</p>
+      </div>
+      <div class="avail-stats reveal">
+        <div class="as"><div class="n">4</div><div class="l">Single-agave varieties</div></div>
+        <div class="as"><div class="n">42%</div><div class="l">ABV · artesanal</div></div>
+        <div class="as"><div class="n">~20</div><div class="l">Pallets in Missouri</div></div>
+        <div class="as"><div class="n">Case<br>+ Pallet</div><div class="l">Order quantities</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ AWARDS ============ -->
+<section id="awards">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow gold">Press &amp; Recognition</p>
+      <h2>Awarded by experts. <em>Enjoyed by lovers.</em></h2>
+      <p class="lead">Mr. Mezcal has been recognized at the competitions buyers and connoisseurs follow most closely.</p>
+    </div>
+    <div class="awards reveal">
+      <div class="aw"><div class="medal">PLAT<br>96/100</div><div><div class="comp">Las Vegas Global Spirit Awards</div><div class="what">Best Mezcal · Platinum, 96/100</div></div><div class="yr">2023</div></div>
+      <div class="aw"><div class="medal">DOUBLE<br>GOLD</div><div><div class="comp">SF World Spirits Competition</div><div class="what">Double Gold — all varieties recognized</div></div><div class="yr">2023</div></div>
+      <div class="aw"><div class="medal">BEST IN<br>SHOW</div><div><div class="comp">L.A. Spirits Awards</div><div class="what">Best Mezcal &amp; Best in Show</div></div><div class="yr">2020</div></div>
+      <div class="aw"><div class="medal">PLAT</div><div><div class="comp">SIP Awards</div><div class="what">Platinum</div></div><div class="yr">2024</div></div>
+      <div class="aw"><div class="medal">SILVER</div><div><div class="comp">SF World Design Competition</div><div class="what">Silver — Bottle Design</div></div><div class="yr">2022</div></div>
+      <div class="aw"><div class="medal">PRESS</div><div><div class="comp">Forbes</div><div class="what">Featured twice</div></div><div class="yr">—</div></div>
+    </div>
+    <p class="aw-note">Accolades as reported by the brand. Official competition badges can be added on request — verify current awards at mrmezcal.com.</p>
+  </div>
+</section>
+
+<!-- ============ WHO WE SERVE ============ -->
+<section class="sec-2" id="serve">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Who We Serve</p>
+      <h2>Built for the <em>licensed trade.</em></h2>
+      <p class="lead">PF Distribution works exclusively with licensed businesses authorized to purchase alcohol for resale. If you hold a valid license, we'd like to hear from you.</p>
+    </div>
+    <div class="serve-grid reveal">
+      <div class="sv"><div class="svn">Bars</div><div class="svd">Back-bar pours and signature mezcal cocktails.</div></div>
+      <div class="sv"><div class="svn">Restaurants</div><div class="svd">Beverage programs and curated spirit lists.</div></div>
+      <div class="sv"><div class="svn">Hotels</div><div class="svd">Lobby bars, room service, and group programs.</div></div>
+      <div class="sv"><div class="svn">Liquor Stores</div><div class="svd">A premium, award-winning shelf SKU.</div></div>
+      <div class="sv"><div class="svn">Grocery Stores</div><div class="svd">Differentiated stock for spirits sets.</div></div>
+      <div class="sv"><div class="svn">Private Clubs</div><div class="svd">Member bars and reserve selections.</div></div>
+      <div class="sv"><div class="svn">Event Venues</div><div class="svd">Bar service and featured tastings.</div></div>
+      <div class="sv"><div class="svn">Caterers</div><div class="svd">Premium spirits for licensed events.</div></div>
+      <div class="sv"><div class="svn">Other Licensed Retailers</div><div class="svd">Any account licensed to purchase for resale.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div class="c-side reveal">
+        <p class="eyebrow">Trade Inquiries Only</p>
+        <h2>Request trade information.</h2>
+        <p class="lead">Tell us about your licensed business and our trade team will follow up with information, pricing, and availability. We respond to verified licensed accounts.</p>
+        <div class="c-cards">
+          <div class="c-card"><span class="k">Trade team</span><span class="v"><a href="mailto:gerardo@mrmezcal.mx">gerardo@mrmezcal.mx</a></span></div>
+          <div class="c-card"><span class="k">Phone</span><span class="v"><a href="tel:+16365799374">(636) 579-9374</a></span></div>
+          <div class="c-card"><span class="k">Location</span><span class="v">Williamsburg, Missouri</span></div>
+        </div>
+        <p class="c-only">PF Distribution is a licensed alcohol wholesaler. We do not sell directly to consumers and cannot fulfill consumer orders, home delivery, or retail sales to the general public.</p>
+      </div>
+
+      <form class="inq" id="inquiryForm" novalidate>
+        <input type="hidden" name="_subject" value="New trade inquiry — PF Distribution">
+        <div class="field r2">
+          <div class="field"><label>Business / account name <span class="req">*</span></label><input name="business" required placeholder="e.g. Matatlán Cantina"></div>
+          <div class="field"><label>Contact name <span class="req">*</span></label><input name="contact" required placeholder="Full name"></div>
+        </div>
+        <div class="field r2">
+          <div class="field"><label>Business email <span class="req">*</span></label><input type="email" name="email" required placeholder="you@business.com"></div>
+          <div class="field"><label>Phone</label><input name="phone" placeholder="(000) 000-0000"></div>
+        </div>
+        <div class="field r2">
+          <div class="field"><label>Business type <span class="req">*</span></label>
+            <select name="biztype" required>
+              <option value="" selected disabled>Select…</option>
+              <option>Bar</option><option>Restaurant</option><option>Hotel</option>
+              <option>Liquor store</option><option>Grocery store</option><option>Private club</option>
+              <option>Event venue</option><option>Caterer</option><option>Other licensed retailer</option>
+            </select>
+          </div>
+          <div class="field"><label>State / territory <span class="req">*</span></label><input name="state" required value="Missouri"></div>
+        </div>
+        <div class="field"><label>Alcohol license # <span class="opt">(optional — speeds up onboarding)</span></label><input name="license" placeholder="State / federal license number"></div>
+        <div class="field"><label>Varieties of interest</label>
+          <div class="checks">
+            <label class="chk"><input type="checkbox" name="variety" value="Espadín"> Espadín</label>
+            <label class="chk"><input type="checkbox" name="variety" value="Tobalá"> Tobalá</label>
+            <label class="chk"><input type="checkbox" name="variety" value="Tepeztate"> Tepeztate</label>
+            <label class="chk"><input type="checkbox" name="variety" value="Cuishe"> Cuishe</label>
+          </div>
+        </div>
+        <div class="field"><label>Message</label><textarea name="message" placeholder="Tell us about your account and what you're looking for."></textarea></div>
+        <div class="field">
+          <label class="consent"><input type="checkbox" name="consent" required>
+            <span>I confirm this inquiry is on behalf of a properly licensed business purchasing alcohol for resale, and that I am 21 years of age or older.</span>
+          </label>
+        </div>
+        <button type="submit" class="btn btn-solid">Send Trade Inquiry</button>
+        <p class="form-foot" id="formFoot">Trade inquiries only · We respond to verified licensed accounts</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============ COMPLIANCE ============ -->
+<section class="sec-2" id="compliance">
+  <div class="wrap">
+    <div class="comp reveal">
+      <p class="eyebrow">Compliance · Three-Tier System</p>
+      <h2>Trade only. Licensed businesses only.</h2>
+      <p><span class="hl">PF Distribution is a licensed alcohol wholesaler based in Williamsburg, Missouri, and the Missouri distribution partner for Mr. Mezcal. We sell only to properly licensed businesses authorized to purchase alcoholic beverages for resale</span> — bars, restaurants, hotels, liquor stores, grocery stores, private clubs, event venues, caterers, and other licensed alcohol retailers. We do not sell directly to consumers, and we do not offer online checkout, consumer pricing, home delivery, or retail sales to the general public.</p>
+      <p>We operate within the three-tier alcohol distribution system — producer, distributor, retailer — and supply only the retailer tier. Product availability is subject to applicable federal, state, and local licensing requirements and may be limited to approved territories. Nothing on this site constitutes an offer to sell where prohibited by law.</p>
+      <p class="small">This page is provided for general information only and is not legal advice.</p>
+      <div class="comp-tags">
+        <span class="t">Three-tier compliant</span>
+        <span class="t">Licensed accounts only</span>
+        <span class="t">No direct-to-consumer sales</span>
+        <span class="t">21+ · Please enjoy responsibly</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <div class="pf">PF Distribution</div>
+        <div class="sub">Pistolas Fritas · Williamsburg, Missouri</div>
+        <p>The licensed Missouri distribution partner for Mr. Mezcal. We sell only to licensed trade accounts authorized to purchase alcohol for resale. We do not sell directly to consumers.</p>
+      </div>
+      <div class="foot-col">
+        <h4>Explore</h4>
+        <a href="#about">The Distributor</a>
+        <a href="#mezcal">About Mr. Mezcal</a>
+        <a href="#mezcals">The Mezcals</a>
+        <a href="#availability">Availability</a>
+        <a href="#awards">Awards</a>
+      </div>
+      <div class="foot-col">
+        <h4>Trade</h4>
+        <a href="#serve">Who we serve</a>
+        <a href="#contact">Request trade information</a>
+        <a href="#compliance">Compliance notice</a>
+        <a href="https://mrmezcal.com" target="_blank" rel="noopener">Brand info: mrmezcal.com ↗</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 PF Distribution (Pistolas Fritas). All rights reserved.</span>
+      <span>Product information sourced from mrmezcal.com · <span class="age">You must be 21+ to engage. Please enjoy responsibly.</span></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  var t=document.getElementById('navToggle'),n=document.getElementById('navlinks');
+  t&&t.addEventListener('click',function(){n.classList.toggle('open');});
+  n&&n.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){n.classList.remove('open');});});
+
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.1,rootMargin:'0px 0px -8% 0px'});
+  document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+
+  // Trade inquiry form.
+  // 1) PASTE YOUR FORMSPREE ID BELOW to collect submissions automatically in your inbox.
+  //    Get it free at formspree.io — it's the code after /f/ in your form's URL
+  //    (e.g. https://formspree.io/f/abcdwxyz  ->  FORMSPREE_ID = 'abcdwxyz').
+  // 2) Until then, the form falls back to opening the sender's email app, pre-addressed.
+  var FORMSPREE_ID='YOUR_FORM_ID';            // <-- replace YOUR_FORM_ID
+  var FALLBACK_EMAIL='gerardo@mrmezcal.mx';
+  var f=document.getElementById('inquiryForm'),foot=document.getElementById('formFoot');
+
+  function buildText(){
+    var vs=Array.prototype.slice.call(f.querySelectorAll('input[name=variety]:checked')).map(function(c){return c.value;}).join(', ')||'—';
+    return 'TRADE INQUIRY — PF Distribution\n'+
+      '--------------------------------\n'+
+      'Business / account: '+f.business.value+'\n'+
+      'Contact: '+f.contact.value+'\n'+
+      'Email: '+f.email.value+'\n'+
+      'Phone: '+(f.phone.value||'—')+'\n'+
+      'Business type: '+f.biztype.value+'\n'+
+      'State / territory: '+f.state.value+'\n'+
+      'License #: '+(f.license.value||'—')+'\n'+
+      'Varieties of interest: '+vs+'\n'+
+      'Message: '+(f.message.value||'—')+'\n\n'+
+      'Confirmed: licensed business purchasing for resale, 21+.';
+  }
+
+  f&&f.addEventListener('submit',function(ev){
+    ev.preventDefault();
+    if(!f.business.value||!f.contact.value||!f.email.value||!f.biztype.value||!f.state.value||!f.consent.checked){
+      foot.textContent='Please complete the required fields and confirm you are a licensed business, 21+.';
+      foot.style.color='var(--copper)';return;
+    }
+    // Fallback mode: Formspree not configured yet -> open the sender's email app.
+    if(FORMSPREE_ID==='YOUR_FORM_ID'){
+      var subject='Trade inquiry — '+f.business.value+' ('+f.state.value+')';
+      window.location.href='mailto:'+FALLBACK_EMAIL+'?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(buildText());
+      foot.textContent='Opening your email app to send the inquiry…';
+      foot.style.color='var(--agave)';return;
+    }
+    // Live mode: send to Formspree without leaving the page.
+    foot.textContent='Sending…';foot.style.color='var(--cream-dim)';
+    fetch('https://formspree.io/f/'+FORMSPREE_ID,{method:'POST',headers:{'Accept':'application/json'},body:new FormData(f)})
+      .then(function(r){
+        if(r.ok){f.reset();foot.textContent='Thank you — your trade inquiry has been sent. Our team will follow up shortly.';foot.style.color='var(--agave)';}
+        else{foot.textContent='Something went wrong — please email '+FALLBACK_EMAIL+' directly.';foot.style.color='var(--copper)';}
+      })
+      .catch(function(){foot.textContent='Network error — please email '+FALLBACK_EMAIL+' directly.';foot.style.color='var(--copper)';});
+  });
+</script>
+</body>
+</html>
