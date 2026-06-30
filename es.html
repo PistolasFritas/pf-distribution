@@ -28,7 +28,7 @@
     --sans:"Jost",system-ui,sans-serif;
   }
   *{box-sizing:border-box}
-  html{scroll-behavior:smooth}
+  html{scroll-behavior:smooth;scroll-padding-top:92px}
   @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
   body{
     margin:0;background:var(--noir);color:var(--cream);
@@ -60,9 +60,9 @@
 
   /* Nav */
   header.nav{position:sticky;top:0;z-index:200;background:rgba(14,12,10,.82);backdrop-filter:blur(12px);border-bottom:1px solid var(--hair-2)}
-  .nav-in{display:flex;align-items:center;justify-content:space-between;gap:24px;height:76px;max-width:var(--maxw);margin:0 auto;padding:0 32px}
+  .nav-in{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:76px;max-width:var(--maxw);margin:0 auto;padding:10px 32px}
   .brand{display:flex;flex-direction:column;text-decoration:none;line-height:1}
-  .brand .pf{font-family:var(--serif);font-weight:600;font-size:23px;letter-spacing:.04em;color:var(--cream)}
+  .brand .pf{font-family:var(--serif);font-weight:600;font-size:23px;line-height:1.15;letter-spacing:.04em;color:var(--cream)}
   .brand .sub{font-family:var(--sans);font-weight:400;font-size:9px;letter-spacing:.34em;text-transform:uppercase;color:var(--cream-dim);margin-top:6px}
   .nav-links{display:flex;align-items:center;gap:32px}
   .nav-links a{font-family:var(--sans);font-weight:300;font-size:12px;letter-spacing:.16em;text-transform:uppercase;text-decoration:none;color:var(--cream-dim);transition:color .25s}
@@ -254,10 +254,13 @@
   }
   @media (max-width:680px){
     body{font-size:16px}
+    .nav-in{min-height:64px;padding:8px 20px}
+    .brand .pf{font-size:19px}
+    .brand .sub{font-size:8px;letter-spacing:.18em}
     section{padding:84px 0}
     .nav-links{display:none}
     .nav-toggle{display:inline-block}
-    .nav-links.open{display:flex;position:absolute;top:76px;left:0;right:0;flex-direction:column;background:var(--noir);padding:22px 32px;gap:18px;border-bottom:1px solid var(--hair)}
+    .nav-links.open{display:flex;position:absolute;top:100%;left:0;right:0;flex-direction:column;background:var(--noir);padding:22px 32px;gap:18px;border-bottom:1px solid var(--hair)}
     .nav-cta .btn-line{display:none}
     .mz-grid,.serve-grid,.avail-stats,.checks,.field.r2{grid-template-columns:1fr}
     .field.r2{gap:0}
